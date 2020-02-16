@@ -135,7 +135,7 @@ function getNodeObject(rootObject, currentNode){
 function convertXmlToJson1(xmlDoc){
 
     if(!isValidXml(xmlDoc))
-        return {'Error':'Invalid json'};    
+        return {'Error':'Invalid Xml'};    
     
     // documentElement always represents the root node
     var xmlChildNodes = xmlDoc.nodeType==DOMNodeTypes.DOCUMENT_NODE? [...xmlDoc.documentElement.children]:xmlDoc.nodeType==DOMNodeTypes.ELEMENT_NODE?[...xmlDoc.children]:[...xmlDoc.children];
@@ -184,7 +184,7 @@ function convertXmlToJson1(xmlDoc){
 function convertXmlToJson2(xmlDoc){
 
     if(!isValidXml(xmlDoc))
-        return {'Error':'Invalid json'};
+        return {'Error':'Invalid Xml'};
 
     var jsonResult = getNodeObject({}, xmlDoc.firstChild);
 
