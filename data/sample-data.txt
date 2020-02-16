@@ -1,0 +1,174 @@
+<Root>
+	<ClientCode> 488</ClientCode>
+	<RiskTiers> 
+		<RiskTier>
+			<ScoreCardRiskTierID>456</ScoreCardRiskTierID>
+			<ScoreCardID>47</ScoreCardID>
+		<RiskTier />
+		<RiskTier>
+			<ScoreCardRiskTierID>456</ScoreCardRiskTierID>
+			<ScoreCardID>47</ScoreCardID>
+		<RiskTier />
+	</RiskTiers>
+</Root>
+
+<Root>
+	<ClientCode> 488</ClientCode>
+	<RiskTiers> 
+		<Add key="ScoreCardRiskTierID" value="456" />
+		<Add key="ScoreCardID" value="456" />		
+	</RiskTiers>
+	<RiskTiers> 
+		<Add key="ScoreCardRiskTierID" value="456" />
+		<Add key="ScoreCardID" value="456" />		
+	</RiskTiers>
+</Root>
+	 
+{
+	"ClientCode": "488",
+	"RiskTiers": [
+		{
+			"ScoreCardRiskTierID": 456,
+			"ScoreCardID": 47,
+			"Interval": 1,
+			"Minimum": 800,
+			"Maximum": null,
+			"IntervalOdds": 0.6,
+			"PercentNegative": 1.5
+		},
+		{
+			"ScoreCardRiskTierID": 457,
+			"ScoreCardID": 47,
+			"Interval": 2,
+			"Minimum": 700,
+			"Maximum": 799,
+			"IntervalOdds": 0.2,
+			"PercentNegative": 1.5
+		},
+		{
+			"ScoreCardRiskTierID": 458,
+			"ScoreCardID": 47,
+			"Interval": 3,
+			"Minimum": null,
+			"Maximum": 699,
+			"IntervalOdds": 0.3,
+			"PercentNegative": 2.15
+		}
+	],
+	"ScoreCard": {
+		"ScoreCardID": 47,
+		"ScoreCardName": "shweta test",
+		"ProductTypeID": 4,
+		"CreditScoreTypeID": 1,
+		"BadDayDelinquentID": 1,
+		"SortDirection": 2
+	},
+	"Total": {
+		"ScoreCardRiskTierID": 459,
+		"ScoreCardID": 47,
+		"Interval": 0,
+		"Minimum": null,
+		"Maximum": null,
+		"IntervalOdds": null,
+		"PercentNegative": null
+	}
+}
+
+
+rootObject = {title: "Everyday Italian", author: "Giada De Laurentiis", year: 2005, price: 30}
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+
+  <book>
+    <title>Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+  <book>
+    <title>Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+
+</bookstore>
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+
+  <book category="cooking">
+    <title lang="en">Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+  <book category="children">
+    <title lang="en">Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+
+</bookstore>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+
+  <book>
+    <title>Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+  <book>
+    <title>Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+
+</bookstore>
+
+
+
+
+
+
+{
+    "bookstore": {
+        "book": [
+            {
+                "_category": "cooking",
+                "title": {
+                    "_lang": "en",
+                    "text": "Everyday Italian"
+                },
+                "author": "Giada De Laurentiis",
+                "year": 2005,
+                "price": 30
+            },
+            {
+                "_category": "children",
+                "title": {
+                    "_lang": "en",
+                    "text": "Harry Potter"
+                },
+                "author": "J K. Rowling",
+                "year": 2005,
+                "price": 29.99
+            }
+        ]
+    }
+}
