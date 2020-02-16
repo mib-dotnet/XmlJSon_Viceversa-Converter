@@ -1,11 +1,9 @@
 # xmlToJson
 
-> Library-free Javascript Singleton to convert ugly XML to JSON. < 1k minified.
+> Library-free Javascript Singleton to convert ugly XML to JSON
 
 
 ## Overview
-
-One of the companies I worked for supplied data via RESTful APIs that returned ugly XML. Who uses XML anymore? Are there other libraries out there? Sure. Many of them are predicated on jQuery or other libraries and the resulting structure sometimes.... meh. Not exactly without some overhead.
 
 I wanted something simple that came as close to native JSON as I could get, so I wrote up this simple Singleton to handle the conversion.
 
