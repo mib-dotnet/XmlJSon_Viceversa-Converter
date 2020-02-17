@@ -10,8 +10,8 @@ function transform2Json() {
 function transform2Xml() {
   var inputJson = document.getElementById('xmltext').value;
   var xml = convertJsonToXml(JSON.parse(inputJson));
-
-  document.getElementById('jsontext').innerHTML = '<pre>' + xml + '</pre>';
+  var xmlForHtml = document.createTextNode(xml);
+  document.getElementById('jsontext').append(xmlForHtml);
   // document.getElementById("jsontext").innerHTML = json;
 
 }

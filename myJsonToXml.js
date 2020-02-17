@@ -21,7 +21,7 @@ function toXML(tag, o) {
                 }
             }
         }
-        if (len(o) === 0) {
+        if (Array.isArray(Object.keys(o)) && o[a].length === 0) {
             doc += '/>';
             return doc;
         } else {
